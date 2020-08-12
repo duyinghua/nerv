@@ -157,6 +157,8 @@ function renderVNodeToString (vnode, parent, context, isSvg?: boolean) {
       context = extend(clone(context), instance.getChildContext())
     }
     return renderVNodeToString(rendered, vnode, context, isSvg)
+  } else {
+    return ''
   }
 }
 

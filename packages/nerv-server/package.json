@@ -1,8 +1,8 @@
 {
-  "name": "nerv-server",
-  "version": "1.5.7",
+  "name": "nerv-server-fix",
+  "version": "1.5.8",
   "description": "Server-side rendering for Nerv.js",
-  "author": "yuche",
+  "author": "yuche,duyinghua",
   "license": "MIT",
   "main": "index.js",
   "module": "dist/nerv.ssr.js",
@@ -10,7 +10,10 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NervJS/nerv.git"
+    "url": "git+https://github.com/duyinghua/nerv.git"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
   },
   "dependencies": {
     "nerv-shared": "1.4.0",
